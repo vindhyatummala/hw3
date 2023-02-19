@@ -1,20 +1,16 @@
-<%= form_with :model => @place do |form| %>
+<%= form_with :model => @post do |form| %>
   <p>
     <%= form.label "title", "Post Title" %>
     <%= form.text_field "title" %>
   </p>
-    <p>
+  <p>
     <%= form.label "description", "Description" %>
     <%= form.text_field "description" %>
   </p>
-    <p>
+  <p>
     <%= form.label "posted_on", "Posted On" %>
     <%= form.date_field "posted_on" %>
   </p>
-    <p>
-    <%= form.label "place_id", "Name of the Place" %>
-    <%= form.text_field "place_id" %>
-  </p>
-    <%= form.hidden_field "place_id" %>
+  <%= form.hidden_field "place_id" %>
   <%= form.submit %>
 <% end %>
